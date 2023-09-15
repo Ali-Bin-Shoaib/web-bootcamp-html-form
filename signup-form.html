@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+</head>
+<style>
+    body {
+        color: white;
+        
+    }
+
+    table {
+        border-spacing: 0px;
+        width: 50%;
+        margin: auto;
+    }
+
+    td {
+        padding: 1%;
+        /* margin: 12%; */
+    }
+
+    h3 {
+        text-align: end;
+        margin-right: 5%;
+    }
+
+    button {
+        padding: 1% 2%;
+        color: white;
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0px;
+    }
+ 
+
+</style>
+
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <td style="background-color: #da8504" colspan="2">
+                        <h2>Sign up</h2>
+                    </td>
+                </tr>
+            </thead>
+            <tbody style="background-color: #222536">
+                <tr>
+                    <td>
+                        <h3>First Name</h3>
+                    </td>
+                    <td><input type="text" placeholder="Enter First Name" id="firstName" name="firstName" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Last Name</h3>
+                    </td>
+                    <td><input type="text" placeholder="Enter Last Name" id="lastName" name="LastName" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Date of Birth</h3>
+                    </td>
+                    <td>
+                        <select name="date" id="date">
+                            <option selected disabled value="">Date</option>
+                        </select>
+                        <select name="month" id="month">
+                            <option selected disabled value="">Month</option>
+                        </select>
+                        <select name="year" id="year">
+                            <option selected disabled value="">Year</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Gender</h3>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" />
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Country</h3>
+                    </td>
+                    <td>
+                        <select name="country" id="country">
+                            <option selected disabled>Country</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>E-mail</h3>
+                    </td>
+                    <td><input type="email" placeholder="Enter E-mail" id="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Phone</h3>
+                    </td>
+                    <td><input type="tel" placeholder="Enter Phone" id="phone" name="phone" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Password</h3>
+                    </td>
+                    <td><input type="password" id="password" name="password" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Confirm Password</h3>
+                    </td>
+                    <td><input type="confirmPassword" id="confirmPassword" name="confirmPassword" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="agree" name="agree" />
+                        <label for="agree">I Agree to the Terms of use</label>
+                    </td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td  style="background-color: #da8504;" colspan="2">
+                        <div style="display: flex;justify-content: end;">
+
+                                <button style="background-color: #63af5c">Submit</button>
+                                <button style="background-color: #d9544f">Cancel</button>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>

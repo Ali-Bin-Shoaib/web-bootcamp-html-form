@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<style>
+    table {
+        border-spacing: 5px;
+        margin: auto;
+
+
+    }
+
+    input,
+    select,
+    textarea {
+        margin: 1% 5%;
+    }
+
+    button {
+        padding: 3% 5%;
+    }
+
+    td,
+    th {
+        background-color: #00ccff;
+        width: 10rem;
+
+
+    }
+
+    button {
+        margin: 0.5% 0%;
+        width: 30%;
+        padding: 2% 0px;
+    }
+
+    span {
+        padding: 2%;
+    }
+
+    label {
+        font-size: large;
+    }
+</style>
+
+<body>
+    <form>
+        <table
+            style="border-top: 4px groove #7c7c7c;border-left:  4px groove #7c7c7c;border-right: 4px solid black;border-bottom: 4px solid black">
+            <thead>
+                <tr>
+                    <th colspan="2" style="background-color: #fffeab; color: #fe0303;"><span
+                            style="font-size: xx-large;">Registration
+                            Form</sp>
+                    </th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;border-top: 1px solid black;">
+                        <label>Enter Name</label>
+                    </td>
+                    <td style="border-top: 1px solid black;"><input type=" text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;border-top: 1px solid black;">
+                        <label>Enter Password</label>
+                    </td>
+                    <td style="border-top: 1px solid black;"><input type=" text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;border-top: 1px solid black;">
+                        <label>Enter Address</label>
+                    </td>
+                    <td style="border-top: 1px solid black;"><textarea cols="21" rows="5"></textarea> </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;">
+                        <label>Select Game</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hockey" id="hockey">
+                        <label for="hockey">Hockey</label>
+                        <br>
+                        <input type="checkbox" name="football" id="football">
+                        <label for="football">Football</label>
+                        <br>
+                        <input type="checkbox" name="badminton" id="badminton">
+                        <label for="badminton">Badminton</label>
+                        <br>
+                        <input type="checkbox" name="cricket" id="cricket">
+                        <label for="cricket">Cricket</label>
+                        <br>
+                        <input type="checkbox" name="volleyball" id="volleyball">
+                        <label for="volleyball">Volleyball</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;border-top: 1px solid black;">
+                        <label>Gender</label>
+                    </td>
+                    <td style="border-top: 1px solid black; display: flex;width: inherit;">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <label>Select ur age</label>
+                    </td>
+                    <td><select name="age" id="age" style="width: 53%;">
+                            <option>select</option>
+                            <option>15</option>
+                            <option>16</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <label>Select Photo</label>
+                    </td>
+                    <td><input type="file" name="img" id="img"></td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+
+                        <button>Click Me</button>
+                        <button>Reset</button>
+                        <button>Submit Form</button>
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </form>
+</body>
+
+</html>
